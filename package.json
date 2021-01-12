@@ -1,0 +1,27 @@
+{
+  "name": "sotd-twitterbot",
+  "version": "1.0.0",
+  "description": "TwitterBot that tweets songs when playlists are updated",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STapia24/SOTD-TwitterBot.git"
+  },
+  "author": "Sergio Tapia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/STapia24/SOTD-TwitterBot/issues"
+  },
+  "homepage": "https://github.com/STapia24/SOTD-TwitterBot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "line-reader": "^0.4.0",
+    "md5": "^2.3.0",
+    "spotify-web-api-node": "^5.0.0",
+    "twit": "^2.2.11"
+  }
+}
