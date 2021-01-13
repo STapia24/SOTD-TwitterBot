@@ -9,7 +9,7 @@ var twconfig = require('./twCredentials');
 var T = new Twit(twconfig);
 
 // Spotify API npm package variables
-const token = fs.readFileSync('token.txt');
+const token = fs.readFileSync("./Updating Files/token.txt");
 var SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi = new SpotifyWebApi();
 spotifyApi.setAccessToken(token);
@@ -30,7 +30,7 @@ function getMyData() {
 //Gets the user's playlists
 async function getUserPlaylists(userName) {
   const data = await spotifyApi.getUserPlaylists(userName)
-  var offstr = fs.readFileSync("songNumber.txt", {encoding:'utf8'});    //Gets the offset as a string in the format: #->
+  var offstr = fs.readFileSync("./Updating Files/songNumber.txt", {encoding:'utf8'});    //Gets the offset as a string in the format: #->
   off = offstr.split("->");                                             //Splits the offset string so that only the number remains
   off = parseInt(off[0]);                                               //Converts the stringified number to an int
 
@@ -56,13 +56,13 @@ async function getPlaylistTracks(playlistId, playlistName) {
     const track = track_obj.track
     tracks.push(track);
     var song = "-> | " + track.name + " - " + track.artists[0].name;
-    songNum = fs.readFileSync("songNumber.txt", {encoding: "utf8"});
-    fs.readFile("Song of The Day 2021.txt", function (err, data) {
+    songNum = fs.readFileSync("./Updating Files/songNumber.txt", {encoding: "utf8"});
+    fs.readFile("./Updating Files/Song of The Day 2021.txt", function (err, data) {
       if (err) throw err;
       //If the document does not contains the number in the format #-> then it adds the song to the document
       //In the case it does contain the number in that format it simply jumps to the next song and repeats the previous step 
       if(!data.includes(songNum)){
-        fs.writeFileSync(playlistName +'.txt', i + song + "\n", {
+        fs.writeFileSync("./Updating Files/" + playlistName +'.txt', i + song + "\n", {
           encoding: "utf8", 
           flag: "a+",
         });
@@ -80,7 +80,7 @@ setInterval(getMyData, 1000*60)
 
 
 //The file where the playlist will be updated
-const playlistFile = 'Song of The Day 2021.txt';
+const playlistFile = "./Updating Files/Song of The Day 2021.txt";
 console.log(`Watching for file changes on ${playlistFile}`);
 
 //Implementing fs.watch to trigger the fetchSong function
@@ -102,7 +102,7 @@ fs.watch(playlistFile, (event, filename) => {
   }
 });
 
-const songFile = 'tweetingSong.txt';
+const songFile = "./Updating Files/tweetingSong.txt";
 console.log(`Watching for file changes on ${songFile}`);
 
 //Implementing fs.watch to trigger the tweetSong function
@@ -127,9 +127,9 @@ fs.watch(songFile, (event, filename) => {
 // This function takes from the documents the username and the tweetID to which it will reply and
 // replies to it
 function tweetSong(){
-    const userName = fs.readFileSync("userName.txt", {encoding: "utf8"});
-    const tweetID = fs.readFileSync("tweetID.txt", {encoding: "utf8"});
-    var songComplete = fs.readFileSync('tweetingSong.txt', {encoding:'utf8'}) //Reads the complete info of the song in the format: #-> | song - artist
+    const userName = fs.readFileSync("./Updating Files/userName.txt", {encoding: "utf8"});
+    const tweetID = fs.readFileSync("./Updating Files/tweetID.txt", {encoding: "utf8"});
+    var songComplete = fs.readFileSync("./Updating Files/tweetingSong.txt", {encoding:'utf8'}) //Reads the complete info of the song in the format: #-> | song - artist
     var songArray = songComplete.split("| ");                                 //Divides the string into an array with two elements: #-> and song - artist
     var songID = songArray[0];                                                //Assigns the first part of the array of strings as the songID
     var songNum = songID.split("->")                                          //Divides the songID so only the number remains
@@ -139,20 +139,20 @@ function tweetSong(){
     { in_reply_to_status_id: tweetID , 
         status: "@" +  userName + " " + "Canción " + `${songNum}/365:\n` + songInfo 
     }, (err, data, response) => {
-        fs.writeFileSync("tweetID.txt", data.id_str, {encoding: "utf8"});
-        fs.writeFileSync("userName.txt", data.user.screen_name, {encoding: "utf8"});
+        fs.writeFileSync("./Updating Files/tweetID.txt", data.id_str, {encoding: "utf8"});
+        fs.writeFileSync("./Updating Files/userName.txt", data.user.screen_name, {encoding: "utf8"});
         iSongNum = parseInt(songID);                                          //Converts the songID string into an int
         iSongNum++;                                                           //Increments the song number by 1
         var searchKey = iSongNum + '->';                                      //Merges back the number and the -> elements to create the search key
-        fs.writeFileSync("songNumber.txt", searchKey, {encoding: "utf8"});    //Stores in the file the search key that will be used to pull the next song
+        fs.writeFileSync("./Updating Files/songNumber.txt", searchKey, {encoding: "utf8"});    //Stores in the file the search key that will be used to pull the next song
       })   
 }
 
 function fetchSong(){
-  var songNumber = fs.readFileSync("songNumber.txt", {encoding: "utf8"});
-  lineReader.eachLine('Song of The Day 2021.txt', function(line) {
+  var songNumber = fs.readFileSync("./Updating Files/songNumber.txt", {encoding: "utf8"});
+  lineReader.eachLine("./Updating Files/Song of The Day 2021.txt", function(line) {
           if(line.includes(`${songNumber}`)){
-              fs.writeFileSync('tweetingSong.txt', line);
+              fs.writeFileSync("./Updating Files/tweetingSong.txt", line);
               console.log("Song in queue: " + line);
               return false;
           }

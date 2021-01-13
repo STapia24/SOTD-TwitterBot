@@ -61,7 +61,7 @@ var spotifyApi = new SpotifyWebApi({
         spotifyApi.setRefreshToken(refresh_token);
   
         console.log('access_token:', access_token);
-        fs.writeFileSync('token.txt', access_token);
+        fs.writeFileSync("./Updating Files/token.txt", access_token);
         console.log('refresh_token:', refresh_token);
   
         console.log(
@@ -75,7 +75,7 @@ var spotifyApi = new SpotifyWebApi({
   
           console.log('The access token has been refreshed!');
           console.log('access_token:', access_token);
-          fs.writeFileSync('token.txt', access_token);
+          fs.writeFileSync("./Updating Files/token.txt", access_token);
           spotifyApi.setAccessToken(access_token);
         }, expires_in / 2 * 1000);
       })
