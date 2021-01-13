@@ -1,4 +1,4 @@
-// File management and integrity npm packages
+// File management and integrity npm packages variables
 const md5 = require('md5');
 const lineReader = require('line-reader');
 var fs = require('fs');
@@ -8,7 +8,7 @@ var Twit = require('twit');
 var twconfig = require('./twCredentials');
 var T = new Twit(twconfig);
 
-// Spotify API npm package
+// Spotify API npm package variables
 const token = fs.readFileSync('token.txt');
 var SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi = new SpotifyWebApi();
@@ -42,8 +42,6 @@ async function getUserPlaylists(userName) {
   }
 }
 
- 
-
  //Gets the songs in a playlist
 async function getPlaylistTracks(playlistId, playlistName) {
 
@@ -68,10 +66,8 @@ async function getPlaylistTracks(playlistId, playlistName) {
           encoding: "utf8", 
           flag: "a+",
         });
-        console.log(i + song);
         i++;
       } else {
-        console.log(i + song);
         i++;
     }
     });
@@ -133,23 +129,22 @@ fs.watch(songFile, (event, filename) => {
 function tweetSong(){
     const userName = fs.readFileSync("userName.txt", {encoding: "utf8"});
     const tweetID = fs.readFileSync("tweetID.txt", {encoding: "utf8"});
-    var songComplete = fs.readFileSync('tweetingSong.txt', {encoding:'utf8'})
-    var songArray = songComplete.split("| ");
-    var songID = songArray[0];
-    var songNum = songID.split("->") 
-    songNum = songNum[0];
-    var songInfo = songArray[1];
+    var songComplete = fs.readFileSync('tweetingSong.txt', {encoding:'utf8'}) //Reads the complete info of the song in the format: #-> | song - artist
+    var songArray = songComplete.split("| ");                                 //Divides the string into an array with two elements: #-> and song - artist
+    var songID = songArray[0];                                                //Assigns the first part of the array of strings as the songID
+    var songNum = songID.split("->")                                          //Divides the songID so only the number remains
+    songNum = songNum[0];                                                     //Assigns the first part of the array to songNum
+    var songInfo = songArray[1];                                              //Stores the second part of the songArray as the info of the song
     T.post('statuses/update', 
     { in_reply_to_status_id: tweetID , 
         status: "@" +  userName + " " + "Canción " + `${songNum}/365:\n` + songInfo 
     }, (err, data, response) => {
-//        console.log(data);
         fs.writeFileSync("tweetID.txt", data.id_str, {encoding: "utf8"});
         fs.writeFileSync("userName.txt", data.user.screen_name, {encoding: "utf8"});
-        iSongNum = parseInt(songID);
-        iSongNum++;
-        var searchKey = iSongNum + '->'; 
-        fs.writeFileSync("songNumber.txt", searchKey, {encoding: "utf8"});
+        iSongNum = parseInt(songID);                                          //Converts the songID string into an int
+        iSongNum++;                                                           //Increments the song number by 1
+        var searchKey = iSongNum + '->';                                      //Merges back the number and the -> elements to create the search key
+        fs.writeFileSync("songNumber.txt", searchKey, {encoding: "utf8"});    //Stores in the file the search key that will be used to pull the next song
       })   
 }
 
