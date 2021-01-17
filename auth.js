@@ -2,13 +2,9 @@ var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express');
 const fs = require('fs');
 
-// This file is copied from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
+// This file is inspired from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
 
 const scopes = [
-    'ugc-image-upload',
-    'user-read-playback-state',
-    'user-modify-playback-state',
-    'user-read-currently-playing',
     'streaming',
     'app-remote-control',
     'user-read-email',
@@ -19,14 +15,9 @@ const scopes = [
     'playlist-modify-private',
     'user-library-modify',
     'user-library-read',
-    'user-top-read',
-    'user-read-playback-position',
-    'user-read-recently-played',
-    'user-follow-read',
-    'user-follow-modify'
   ];
   
-// credentials are optional
+// Credentials
 var spotifyApi = new SpotifyWebApi({
     clientId: 'c98492a67edc4a45982874ea994c8dae',
     clientSecret: 'a9287b63ace64932ab84df9b4e47b858',
