@@ -1,6 +1,7 @@
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express');
 const fs = require('fs');
+var spotiConfig = require('./spotiCredentials');
 
 // This file is inspired from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
 
@@ -18,11 +19,7 @@ const scopes = [
   ];
   
 // Credentials
-var spotifyApi = new SpotifyWebApi({
-    clientId: 'c98492a67edc4a45982874ea994c8dae',
-    clientSecret: 'a9287b63ace64932ab84df9b4e47b858',
-    redirectUri: 'http://localhost:8888/callback'
-  });
+var spotifyApi = new SpotifyWebApi(spotiConfig);
   
   const app = express();
   
@@ -78,6 +75,6 @@ var spotifyApi = new SpotifyWebApi({
   
   app.listen(8888, () =>
     console.log(
-      'HTTP Server up. Now go to http://localhost:8888/login in your browser.'
+      'HTTP Server up. Now go to https://sotd-tweetbot.herokuapp.com/login in your browser.'
     )
   );
