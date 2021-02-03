@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "line-reader": "^0.4.0",
     "md5": "^2.3.0",
+    "nodemon": "^2.0.7",
     "spotify-web-api-node": "^5.0.0",
     "twit": "^2.2.11"
   }

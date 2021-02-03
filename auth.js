@@ -48,9 +48,9 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
         spotifyApi.setAccessToken(access_token);
         spotifyApi.setRefreshToken(refresh_token);
   
-        console.log('access_token:', access_token);
+        //console.log('access_token:', access_token);
         fs.writeFileSync("./Updating Files/token.txt", access_token);
-        console.log('refresh_token:', refresh_token);
+        //console.log('refresh_token:', refresh_token);
   
         console.log(
           `Sucessfully retreived access token. Expires in ${expires_in} s.`
@@ -62,7 +62,7 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
           const access_token = data.body['access_token'];
   
           console.log('The access token has been refreshed!');
-          console.log('access_token:', access_token);
+          //console.log('access_token:', access_token);
           fs.writeFileSync("./Updating Files/token.txt", access_token);
           spotifyApi.setAccessToken(access_token);
         }, expires_in / 2 * 1000);
@@ -75,6 +75,6 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
   
   app.listen(8888, () =>
     console.log(
-      'HTTP Server up. Now go to https://sotd-tweetbot.herokuapp.com/login in your browser.'
+      'HTTP Server up. Now go to http://localhost:8888/login in your browser.'
     )
   );
