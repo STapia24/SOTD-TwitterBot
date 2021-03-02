@@ -30,3 +30,31 @@
 30-> | The Moneyz - Rare Americans
 31-> | Tu Falta De Querer - Mon Laferte
 32-> | I CAN'T STOP ME - TWICE
+33-> | P.A.T.T. - Against The Current
+34-> | Lucha De Gigantes - Nacha Pop
+35-> | show and tell - mxmtoon
+36-> | Sweet Dreams (Are Made of This) - Remastered - Eurythmics
+37-> | El Dinosaurio Anacleto - 31 Minutos
+38-> | I Can't Lose - Marrick Smith
+39-> | La rebelión de los electrodomésticos - Alaska Y Los Pegamoides
+40-> | Goodnight and Goodbye - Jonas Brothers
+41-> | Take Me Home - Bryce Vine
+42-> | Paralyzed - Against The Current
+43-> | Razorblade - The Strokes
+44-> | In The Dark - DEV
+45-> | Love Story (Taylor’s Version) - Taylor Swift
+46-> | La Luz - Juanes
+47-> | One, Two, Three, GO! - Belanova
+48-> | Lonely - Palaye Royale
+49-> | Cigarette Daydreams - Cage The Elephant
+50-> | Escape From The City ...for City Escape - Ted Poley
+51-> | print("i'm so tired") - jenny nuo
+52-> | Amour plastique - Videoclub
+53-> | You Can't Hurry Love - 2016 Remaster - Phil Collins
+54-> | long story short - Taylor Swift
+55-> | Mos Definitely - Logic
+56-> | nuits d'été - Oscar Anton
+57-> | Instant Crush (feat. Julian Casablancas) - Daft Punk
+58-> | Iris - The Goo Goo Dolls
+59-> | Rosa Pastel - Belanova
+60-> | Dime Ven - Motel

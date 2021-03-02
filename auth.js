@@ -1,3 +1,5 @@
+require('log-timestamp');
+
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express');
 const fs = require('fs');
@@ -23,9 +25,10 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
   
   const app = express();
   
-  app.get('/login', (req, res) => {
-    res.redirect(spotifyApi.createAuthorizeURL(scopes));
-  });
+  app.get('/login', (req,res) => {
+    var authUrl = spotifyApi.createAuthorizeURL(scopes)
+    res.redirect(authUrl+"&show_dialog=true")
+  })
   
   app.get('/callback', (req, res) => {
     const error = req.query.error;
@@ -71,6 +74,18 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
         console.error('Error getting Tokens:', error);
         res.send(`Error getting Tokens: ${error}`);
       });
+  });
+
+  app.get('/userinfo', async (req,res) => {
+    try {
+      spotifyApi.setAccessToken(req.session.spotifyAccount["access_token"])
+      spotifyApi.setRefreshToken(req.session.spotifyAccount["refresh_token"])
+      var result = await spotifyApi.getMe()
+      console.log(result.body);
+      res.status(200).send(result.body)
+    } catch (err) {
+      res.status(400).send(err)
+    }
   });
   
   app.listen(8888, () =>
