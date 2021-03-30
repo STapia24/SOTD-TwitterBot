@@ -58,3 +58,29 @@
 58-> | Iris - The Goo Goo Dolls
 59-> | Rosa Pastel - Belanova
 60-> | Dime Ven - Motel
+61-> | Till Forever Falls Apart - Ashe
+62-> | Morenamía (Dueto 2007) - Miguel Bosé
+63-> | Mexican Fender - Weezer
+64-> | Como un lobo (Dueto 2007) - Miguel Bosé
+65-> | Agatha All Along - Kristen Anderson-Lopez
+66-> | Brighter - Against The Current
+67-> | Girls Just Want to Have Fun - Cyndi Lauper
+68-> | Strangers Again - Against The Current
+69-> | weapon - Against The Current
+70-> | Jueves - La Oreja de Van Gogh
+71-> | DAYWALKER! (with CORPSE) - Machine Gun Kelly
+72-> | Bambú (Dueto 2007) - Miguel Bosé
+73-> | Airplanes (feat. Hayley Williams of Paramore) - B.o.B
+74-> | Anastasia - Live - Slash
+75-> | Wonderwall - Oasis
+76-> | Limón y Sal - Julieta Venegas
+77-> | Words - Original Version 1983 - F.R. David
+78-> | Mil Horas - Los Abuelos De La Nada
+79-> | telepatía - Kali Uchis
+80-> | Party Killer - Addison Grace
+81-> | Pudimos Ser - Karol Tapia
+82-> | creep - mxmtoon
+83-> | Dear Future Self (Hands Up) - Fall Out Boy
+84-> | Hate Myself - dodie
+85-> | For the Record - Jonathan Groff
+86-> | Like a Stone - Audioslave
