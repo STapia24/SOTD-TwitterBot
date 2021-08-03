@@ -30,3 +30,185 @@
 30-> | The Moneyz - Rare Americans
 31-> | Tu Falta De Querer - Mon Laferte
 32-> | I CAN'T STOP ME - TWICE
+33-> | P.A.T.T. - Against The Current
+34-> | Lucha De Gigantes - Nacha Pop
+35-> | show and tell - mxmtoon
+36-> | Sweet Dreams (Are Made of This) - Remastered - Eurythmics
+37-> | El Dinosaurio Anacleto - 31 Minutos
+38-> | I Can't Lose - Marrick Smith
+39-> | La rebelión de los electrodomésticos - Alaska Y Los Pegamoides
+40-> | Goodnight and Goodbye - Jonas Brothers
+41-> | Take Me Home - Bryce Vine
+42-> | Paralyzed - Against The Current
+43-> | Razorblade - The Strokes
+44-> | In The Dark - DEV
+45-> | Love Story (Taylor’s Version) - Taylor Swift
+46-> | La Luz - Juanes
+47-> | One, Two, Three, GO! - Belanova
+48-> | Lonely - Palaye Royale
+49-> | Cigarette Daydreams - Cage The Elephant
+50-> | Escape From The City ...for City Escape - Ted Poley
+51-> | print("i'm so tired") - jenny nuo
+52-> | Amour plastique - Videoclub
+53-> | You Can't Hurry Love - 2016 Remaster - Phil Collins
+54-> | long story short - Taylor Swift
+55-> | Mos Definitely - Logic
+56-> | nuits d'été - Oscar Anton
+57-> | Instant Crush (feat. Julian Casablancas) - Daft Punk
+58-> | Iris - The Goo Goo Dolls
+59-> | Rosa Pastel - Belanova
+60-> | Dime Ven - Motel
+61-> | Till Forever Falls Apart - Ashe
+62-> | Morenamía (Dueto 2007) - Miguel Bosé
+63-> | Mexican Fender - Weezer
+64-> | Como un lobo (Dueto 2007) - Miguel Bosé
+65-> | Agatha All Along - Kristen Anderson-Lopez
+66-> | Brighter - Against The Current
+67-> | Girls Just Want to Have Fun - Cyndi Lauper
+68-> | Strangers Again - Against The Current
+69-> | weapon - Against The Current
+70-> | Jueves - La Oreja de Van Gogh
+71-> | DAYWALKER! (with CORPSE) - Machine Gun Kelly
+72-> | Bambú (Dueto 2007) - Miguel Bosé
+73-> | Airplanes (feat. Hayley Williams of Paramore) - B.o.B
+74-> | Anastasia - Live - Slash
+75-> | Wonderwall - Oasis
+76-> | Limón y Sal - Julieta Venegas
+77-> | Words - Original Version 1983 - F.R. David
+78-> | Mil Horas - Los Abuelos De La Nada
+79-> | telepatía - Kali Uchis
+80-> | Party Killer - Addison Grace
+81-> | Pudimos Ser - Karol Tapia
+82-> | creep - mxmtoon
+83-> | Dear Future Self (Hands Up) - Fall Out Boy
+84-> | Hate Myself - dodie
+85-> | For the Record - Jonathan Groff
+86-> | Like a Stone - Audioslave
+87-> | 3 O'clock Things - AJR
+88-> | Last Cup of Coffee Cover - Natsumiii
+89-> | Lonely (with benny blanco) - Justin Bieber
+90-> | La Tormenta De Arena - Dorian
+91-> | Come With Me - Chxrlotte
+92-> | Habits - Johnny Knox
+93-> | Joe - AJR
+94-> | The Longest Time - Billy Joel
+95-> | Shinzo wo Sasageyo! - Linked Horizon
+96-> | Soulful Strut - Young-Holt Unlimited
+97-> | seasonal depression - mxmtoon
+98-> | Mr. Perfectly Fine (Taylor’s Version) (From The Vault) - Taylor Swift
+99-> | Today Was A Fairytale (Taylor’s Version) - Taylor Swift
+100-> | King of the World - Weezer
+101-> | Silver Scrapes (As Featured In League of Legends Season 2 World Championship) - Danny McCarthy
+102-> | Wellerman - Sea Shanty - Nathan Evans
+103-> | 続・かえるくんの冒険 - ネクライトーキー
+104-> | Lost Stars - Adam Levine
+105-> | You Belong With Me (Taylor’s Version) - Taylor Swift
+106-> | Hey Pocky A-Way - Remastered Version - The Meters
+107-> | seasonal depression - mxmtoon
+108-> | We Didn't Start the Fire - Billy Joel
+109-> | I Kissed Someone (It Wasn't You) - dodie
+110-> | Sweet Tooth - Cavetown
+111-> | Qué vendrá - Zaz
+112-> | Kura Kura - TWICE
+113-> | La vie en rose - Zaz
+114-> | In The Heights - Anthony Ramos
+115-> | Imagine - Ben Platt
+116-> | I Need Some of That - Weezer
+117-> | What They Want - Russ
+118-> | Paper Thin - Lianne La Havas
+119-> | Your Power - Billie Eilish
+120-> | Choker - Twenty One Pilots
+121-> | Guren no Yumiya - Linked Horizon
+122-> | Smooth Criminal - 2012 Remaster - Michael Jackson
+123-> | My Play - AJR
+124-> | Boku no Sensou - Shinsei Kamattechan
+125-> | Rueda la Corona - La Raíz
+126-> | Popular - Zoé
+127-> | Manic Pixie Dream Girl - Addison Grace
+128-> | Bodybag - chloe moriondo
+129-> | All the Good Ones - Weezer
+130-> | Tadow - Masego
+131-> | Me Without You - Ashe
+132-> | Is Everybody Going Crazy? - Nothing But Thieves
+133-> | Fever - Peggy Lee
+134-> | Build a Bitch - Bella Poarch
+135-> | Cool Girl - dodie
+136-> | Shogeki - Yuko Ando
+137-> | The Village - Wrabel
+138-> | Be Around Me (feat. chloe moriondo) - Will Joseph Cook
+139-> | SEA - City Girl
+140-> | All My Favorite Songs (feat. AJR) - Weezer
+141-> | California Kids - Weezer
+142-> | La La La - LMFAO
+143-> | Hear Me Out - Jessie Shelton
+144-> | Gettin' Over You (feat. Fergie & LMFAO) - David Guetta
+145-> | Four Tequilas Down - dodie
+146-> | Put Me Back Together - Weezer
+147-> | Plug in Baby - Muse
+148-> | brutal - Olivia Rodrigo
+149-> | good 4 u - Olivia Rodrigo
+150-> | Backseat Rider - Sara Kays
+151-> | Venganza - No Te Va Gustar
+152-> | TGIF (feat. Tom Morello) - K.Flay
+153-> | Cara a Cara - Dante
+154-> | Lost Cause - Billie Eilish
+155-> | Oddloop - frederic
+156-> | Hello (feat. Dragonette) - Martin Solveig
+157-> | Why I Overthink - Addison Grace
+158-> | jealousy, jealousy - Olivia Rodrigo
+159-> | Only the Good Die Young - Billy Joel
+160-> | Optimista - Caloncho
+161-> | The Schmuel Song - The Last 5 Years
+162-> | Breathe - 'In The Heights' Original Broadway Company
+163-> | Piragua - Lin-Manuel Miranda
+164-> | Romantic Disaster (feat. Chrissy Costanza) - LiL Lotus
+165-> | What Time Is It - Zac Efron
+166-> | I Don't Dance - CHAD
+167-> | Just A Girl - No Doubt
+168-> | Tell Me What You Want (From "Wave Break") - Weezer
+169-> | Two Broken Hearts - Rivers Cuomo
+170-> | Ordinaryish People - AJR
+171-> | You're Only Human (Second Wind) - Billy Joel
+172-> | ないものねだり - Revenge THE FIRST TAKE - KANA-BOON
+173-> | again&again - Against The Current
+174-> | You're The One That I Want - From “Grease” - John Travolta
+175-> | Still Clean - Soccer Mommy
+176-> | fever dream - mxmtoon
+177-> | BTEC Lily Allen - Josie Proto
+178-> | Thrift Shop (feat. Wanz) - Macklemore & Ryan Lewis
+179-> | Can't Hold Us - feat. Ray Dalton - Macklemore & Ryan Lewis
+180-> | Colors - Halsey
+181-> | Find an Island - BENEE
+182-> | Bags - Clairo
+183-> | Here You Come Again - Dolly Parton
+184-> | 1 step forward, 3 steps back - Olivia Rodrigo
+185-> | Firework - Katy Perry
+186-> | Is this bad b****** number? - JEON SOYEON
+187-> | BEAM BEAM - JEON SOYEON
+188-> | favorite crime - Olivia Rodrigo
+189-> | Better Drugs - Loladre
+190-> | 21 Guns - Green Day
+191-> | Never Gonna Give You Up (Japanese Version) - Caitlin Myers
+192-> | ZITTI E BUONI - Måneskin
+193-> | Lento - Julieta Venegas
+194-> | Caballo Homosexual De Las Montañas - Karil
+195-> | Beggin' - Måneskin
+196-> | Call Me - Blondie
+197-> | red flags - Lisa Heller
+198-> | NDA - Billie Eilish
+199-> | Gravity - John Mayer
+200-> | Roadtrip - Dream
+201-> | Drink - Marrick Smith
+202-> | Me Voy - Julieta Venegas
+203-> | Boys Will Be Bugs - Cavetown
+204-> | Destroyer - Of Monsters and Men
+205-> | softie with anger issues - aryy
+206-> | jump - Against The Current
+207-> | People Watching - Conan Gray
+208-> | T.A.C.O. - Danna Paola
+209-> | Dancing With Our Hands Tied - Taylor Swift
+210-> | baseball - Hippo Campus
+211-> | Happier Than Ever - Billie Eilish
+212-> | Oxytocin - Billie Eilish
+213-> | OverHeated - Billie Eilish
+214-> | I Didn't Change My Number - Billie Eilish

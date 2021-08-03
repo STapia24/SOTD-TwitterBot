@@ -1,7 +1,10 @@
+require('log-timestamp');
+
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express');
 const fs = require('fs');
-var spotiConfig = require('./spotiCredentials');
+require('dotenv/config')
+//var spotiConfig = require('./spotiCredentials');
 
 // This file is inspired from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
 
@@ -18,14 +21,21 @@ const scopes = [
     'user-library-read',
   ];
   
+  var spotiConfig = {
+    clientId: process.env.SPOTI_CLIENT_ID,
+    clientSecret: process.env.SPOTI_CLIENT_SECRET,
+    redirectUri: process.env.SPOTI_REDIRECT_URI
+  }
+
 // Credentials
 var spotifyApi = new SpotifyWebApi(spotiConfig);
   
   const app = express();
   
-  app.get('/login', (req, res) => {
-    res.redirect(spotifyApi.createAuthorizeURL(scopes));
-  });
+  app.get('/login', (req,res) => {
+    var authUrl = spotifyApi.createAuthorizeURL(scopes)
+    res.redirect(authUrl+"&show_dialog=true")
+  })
   
   app.get('/callback', (req, res) => {
     const error = req.query.error;
@@ -71,6 +81,18 @@ var spotifyApi = new SpotifyWebApi(spotiConfig);
         console.error('Error getting Tokens:', error);
         res.send(`Error getting Tokens: ${error}`);
       });
+  });
+
+  app.get('/userinfo', async (req,res) => {
+    try {
+      spotifyApi.setAccessToken(req.session.spotifyAccount["access_token"])
+      spotifyApi.setRefreshToken(req.session.spotifyAccount["refresh_token"])
+      var result = await spotifyApi.getMe()
+      console.log(result.body);
+      res.status(200).send(result.body)
+    } catch (err) {
+      res.status(400).send(err)
+    }
   });
   
   app.listen(8888, () =>
