@@ -3,7 +3,8 @@ require('log-timestamp');
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express');
 const fs = require('fs');
-var spotiConfig = require('./spotiCredentials');
+require('dotenv/config')
+//var spotiConfig = require('./spotiCredentials');
 
 // This file is inspired from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
 
@@ -20,6 +21,12 @@ const scopes = [
     'user-library-read',
   ];
   
+  var spotiConfig = {
+    clientId: process.env.SPOTI_CLIENT_ID,
+    clientSecret: process.env.SPOTI_CLIENT_SECRET,
+    redirectUri: process.env.SPOTI_REDIRECT_URI
+  }
+
 // Credentials
 var spotifyApi = new SpotifyWebApi(spotiConfig);
   

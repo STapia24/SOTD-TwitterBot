@@ -2,10 +2,16 @@
 const md5 = require('md5');
 const lineReader = require('line-reader');
 var fs = require('fs');
+require('dotenv/config')
 
 // Twitter API npm package variables
 var Twit = require('twit');
-var twconfig = require('./twCredentials');
+var twconfig = {
+  consumer_key: process.env.TWT_CONSUMER_KEY,
+  consumer_secret: process.env.TWT_CONSUMER_SECRET,
+  access_token: process.env.TWT_ACCESS_TOKEN,
+  access_token_secret: process.env.TWT_ACCESS_TOKEN_SECRET  
+  }
 var T = new Twit(twconfig);
 
 // Spotify API npm package variables
